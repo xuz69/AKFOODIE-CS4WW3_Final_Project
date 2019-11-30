@@ -23,26 +23,7 @@ for($i=0;$i < count($_POST["file"]); $i++){
         $test = $test . $_POST["file"][$i] . ",";
     }
 }
-
-/*
- * $check= "SELECT * FROM objects WHERE ((business = ?) AND  (latitude = ?) AND (longitude = ?))" 
-
-
-$test = $dbh->query($check);
-
-echo $test->rowCount();
-
-// if the account exists, return error
-if($test->rowCount() > 0){
-    echo "error";
-}
-else{
-    加下面那段 insert
-}
- * 
- */
 // submit new bussiness into the database
-
 $sql = "INSERT INTO objects (business_name,description,latitude,longitude,image_url,owner_id) VALUES (?, ?, ?, ?, ?, ?)";
 $stmnt = $dbh->prepare($sql);
 
@@ -63,8 +44,8 @@ use Aws\S3\S3Client;
 use Aws\S3\Exception\S3Exception;
 // AWS Info
 $bucketName = 'akobject';
-$IAM_KEY = 'AKIAQ6LFSM5QPYKZKVZR';
-$IAM_SECRET = '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';
+$IAM_KEY = 'AKIAQ6LFSM5QBVG7C5L4';
+$IAM_SECRET = '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';
 // Connect to AWS
 try {
     // You may need to change the region. It will say in the URL when the bucket is open
