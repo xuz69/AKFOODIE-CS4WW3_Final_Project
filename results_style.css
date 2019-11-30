@@ -1,0 +1,228 @@
+/* 
+This is the style sheet created for Project Part 1 of CS 4WW3 of Fall term 2019.
+The results sample style sheet will be seperated into sections as follows:
+	* Navigation Bar (Menu)
+    * Header
+    * Main
+        * Table
+        * Map
+        * Images
+        * Rating
+        * Information
+    * Footer
+
+Also note this file will not have any JS.
+
+*/
+/* Base Page Set up */
+/* html, body, header, footer */
+html, body{
+    min-height: 100%;
+    margin: 0;
+}
+
+/* header */
+header {
+    background-color: black;
+    width:100%;
+    float:left;
+    padding:0;
+}
+
+/* footer */
+footer {
+    clear:both;
+    color:black;
+    position: fixed;
+    background-color: rgba(255,192,203,0.5);
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#map {
+    height:400px;
+    width:100%;
+}
+
+/*-------------------------------------------------------------------------------*/
+/* column & row*/
+.column {
+    float: left;
+    padding: 0px;
+}
+
+/*
+	In row specifications we use clear to denote that nothing is to float to the left or right of it.
+*/
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    width:100%;
+}
+
+/* logo is in the header and it is used to contain an image */
+.logo {
+    float: left;
+    width:15%;
+    font-size:400%;
+    text-align: center;
+    margin:0px;
+}
+
+.logo img{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+/* navigation menu */
+.top-navigation {
+    float: left;
+    width:85%;
+    overflow: hidden;
+}
+
+/* Actual link attributes */
+.top-navigation a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*CSS Method of handling mouse hovering*/
+.top-navigation a:hover{
+    background-color: rgb(254, 193, 204);
+    color: black;
+    margin: 10px;
+}
+
+/*------------------------------------------------------------------*/
+/* specifies the main content of a document */
+main{
+    content: "";
+    display: table;
+    clear: both;
+    width:100%;
+}
+
+/* text display */
+.result-label{
+    width:100%;
+    background-color: rgba(199, 199, 199,0.2);
+    margin:0px;
+}
+
+.result-label p{
+    padding:10px;
+    margin:0px;
+}
+
+
+.result-label h1{
+    padding:10px;
+    margin:0px;
+}
+
+/* simple detail of objects table */
+.results{
+    float:left;
+    background-color: white;
+    width:70%;
+}
+table{
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+/* a header cell in the table */
+th{
+    width:100%;
+    padding:20px;
+}
+
+/*CSS Method of handling mouse hovering*/
+th:hover{
+    background-color: rgba(255, 192, 203,0.2);
+}
+
+/* object for a single restaurant*/
+.single_object{
+    width:100%;
+    background-color: rgba(199, 199, 199,0.2);
+}
+
+/* object picture container*/
+.food-pic{
+    float:left;
+    width:35%;
+    vertical-align: middle;
+}
+
+.food-pic img{
+    width:100%;
+    vertical-align: middle;
+}
+
+/* object information display on the right column beside the food-pic*/
+.single_object_info{
+    float:right;
+    width:65%;
+}
+
+
+/* name of the object */
+.object-name{
+    width:100%;
+    text-align: left;
+    padding:2px;
+    font-size: 18px;
+}
+
+/* rate of the object */
+.object-rating{
+    width:100%;
+    text-align: left;
+    padding:2px;
+    font-size: 15px;
+}
+
+/* rating stars */
+.checked {
+    color: orange;
+}
+
+/* location */
+.object-location{
+    width:100%;
+    text-align: left;
+    padding:4px;
+    font-size: 10px;
+}
+
+/* specification of the object */
+.object-description{
+    width:100%;
+    text-align: left;
+    padding: 4px;
+}
+.object-description p{
+    text-align: left;
+    padding: 4px;
+    font-size:10px;
+}
+
+/* map */
+.map{
+    float:left;
+    background-color: rgba(254, 193, 204,0.2);
+    width:30%;
+    text-align: center;
+}

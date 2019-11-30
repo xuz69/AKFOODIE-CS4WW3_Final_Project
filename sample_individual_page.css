@@ -1,0 +1,291 @@
+/* 
+This is the style sheet created for Project Part 1 of CS 4WW3 of Fall term 2019.
+The individual sample style sheet will be seperated into sections as follows:
+	* Navigation Bar (Menu)
+    * Header
+    * Main
+        * Images
+        * Thematic break
+        * Table
+        * Map
+        * Rating
+        * Form
+        * Information
+        * Submit button
+
+    * Footer
+
+Also note this file will not have any JS.
+
+*/
+/* Base Page Set up */
+/* html, body, header, footer */
+html, body{
+    min-height: 100%;
+    margin: 0;
+}
+
+/* header */
+header {
+    background-color: black;
+    width:100%;
+    float:left;
+    padding:0;
+}
+
+/* footer */
+footer {
+    clear:both;
+    color:black;
+    background-color: rgba(255,192,203,0.5);
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* logo is in the header and it is used to contain an image */
+.logo {
+    float: left;
+    width:15%;
+    height:100%;
+    color: pink;
+    font-size:400%;
+    text-align: center;
+    margin:0px;
+}
+
+.logo img{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+/* navigation menu */
+.top-navigation {
+    float: left;
+    width:85%;
+    overflow: hidden;
+}
+
+/* Actual link attributes */
+.top-navigation a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+/*CSS Method of handling mouse hovering*/
+.top-navigation a:hover{
+    background-color: rgb(254, 193, 204);
+    color: black;
+    margin: 10px;
+}
+
+/* specifies the main content of a document */
+main{
+    content: "";
+    display: table;
+    clear: both;
+    width:100%;
+}
+
+/* container for displaying pictures */
+.object-pics{
+    float:left;
+    width:100%;
+    background-color: rgba(193, 215, 233, 0.3);
+}
+
+/* container for a single pic*/
+.single-pic{
+    float:left;
+    width:25%;
+    text-align: center;
+}
+
+.single-pic img{
+    width:95%;
+    height:220px;
+    padding:5px 0px 5px 0px;
+}
+
+/* Thematic break */
+hr{
+    border-style: dashed;
+    border-color: rgba(128, 128, 128,0.3);
+}
+
+/*
+    object location & map, since we didn't use javascript, we used a
+    screenshot of a map to represent
+*/
+.object-location{
+    background-color: rgba(255, 235, 205,0.3);
+    text-align: center;
+    float:right;
+    width:35%;
+}
+
+.object-location img{
+    width:80%;
+    padding:10px;
+}
+
+/* object information */
+.object-information{
+    float:left;
+    width:65%;
+}
+
+/* object name */
+.info-name{
+    width:100%;
+}
+
+.info-name h3{
+    margin:0;
+    padding: 10px 20px 10px 80px;
+    font-size:30px;
+}
+
+/* object ating */
+.info-ratings{
+    width:100%;
+}
+
+.info-ratings div{
+    padding: 10px 20px 10px 80px;
+}
+
+/* rating stars */
+.checked {
+    color: orange;
+}
+
+/* write comments */
+.info-write-reviews{
+    width:100%;
+}
+
+form{
+    padding:10px 80px 10px 80px;
+}
+
+/* text area */
+form textarea{
+    text-align: left;
+    width: 90%;
+    font-size:1rem;
+}
+
+/* label area */
+label{
+    text-align: left;
+    width: 10%;
+    font-size:1rem;
+}
+/* select */
+select{
+    text-align: left;
+    width: 40%;
+    font-size:1rem;
+}
+
+/* form element <input> style set up*/
+input{
+    width: 15%;
+    padding: 6px;
+    margin: 5px;
+    border: 1px solid rgba(128, 128, 128,0.5);
+    background-color: rgba(128, 128, 128,0.5);
+}
+
+/* others reviews */
+.info-reviews{
+    width:100%;
+}
+
+/* title */
+.reviews-label{
+    padding: 10px 20px 10px 80px;
+    float:left;
+    width:100%;
+}
+
+.reviews-label h3{
+    margin:0;
+    font-size:15px;
+}
+
+/* review table */
+.info-reviews table{
+    text-align: left;
+    width:100%;
+    padding:10px 20px 10px 80px;
+}
+
+/* a header cell in the table */
+th{
+    padding:1rem;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-color: beige;
+}
+
+/* pictures for users*/
+.user-pic{
+    float:left;
+    width:30%;
+}
+
+.user-pic img{
+    width:70%;
+}
+
+/* user comment space */
+.user-comment-info{
+    float:left;
+    width:70%;
+}
+
+/* rating */
+.user-ratings{
+    width:100%;
+}
+
+.user-ratings div{
+    padding: 5px 0px 5px 10px;
+}
+
+/* comments */
+.user-comment{
+    width: 100%
+}
+
+.user-comment p{
+    font-style: oblique;
+    color: rgba(128, 128, 128,0.8);
+    padding: 10px;
+    margin:0;
+}
+
+#map {
+    height:280px;
+    width:100%;
+    background-color: grey;
+}
+
+.map-label{
+    margin:0;
+    padding:10px;
+}
+
+.map-label p {
+    margin: 0px;
+    padding: 0px;
+}

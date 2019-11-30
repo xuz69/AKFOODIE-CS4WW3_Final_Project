@@ -1,0 +1,205 @@
+/* 
+This is the style sheet created for project part 1 search.html of CS 4WW3 of Fall term 2019.
+The style sheet will be seperated into sections as follows:
+    * Header
+ * Navigation Bar (Menu)
+    * Search Bar
+    * Footer
+
+Also note this workshop will not have any JS.
+*/
+html {
+    min-height: 100%;
+    margin: 0px;
+}
+body {
+    min-height: 100%;
+    margin: 0px;
+    background-image: url("food.jpg");
+    background-size: cover;
+}
+
+/* header */
+header {
+    background-color: black;
+    width:100%;
+    float:left;
+    padding:0;
+}
+
+/* footer */
+footer {
+    clear:both;
+    color:black;
+    position: fixed;
+    background-color: rgba(255,192,203,0.5);
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* row */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* column in a row */
+.column{
+    float: left;
+    padding: 0px;
+}
+
+/* logo is in the header and it is used to contain an image */
+.logo {
+    float: left;
+    width:15%;
+    font-size:400%;
+    text-align: center;
+    margin:0px;
+}
+
+.logo img{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+/* navigation menu */
+.top-navigation {
+    float: left;
+    width:85%;
+    overflow: hidden;
+}
+
+/* Actual link attributes */
+.top-navigation a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*CSS Method of handling mouse hovering*/
+.top-navigation a:hover{
+    background-color: rgb(254, 193, 204);
+    color: black;
+    margin: 10px;
+}
+
+
+.subtitle {
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-top:150px;
+    margin-bottom:20px;
+    width:100%;
+
+}
+
+.subtitleloc {
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-top:0px;
+    margin-bottom:10px;
+    width:100%;
+
+}
+
+/* form framework set up */
+form{
+    margin:auto;
+    width:40%;
+    text-align: center;
+}
+
+/* submit input framwork set up*/
+input[type=submit]{
+    padding: 12px;
+    margin: 10px 10px 50px 10px;
+    border: 1px solid black;
+    resize: vertical;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: rgba(255,192,203);
+}
+
+input[type=button]{
+    padding: 12px;
+    margin: 10px 10px 50px 10px;
+    border: 1px solid black;
+    resize: vertical;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: rgba(255,192,203);
+}
+
+/* form element "input" style set up */
+input[type=text]{
+    margin:10px;
+    padding: 10px;
+    font-size: 20px;
+    width:85%;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+/* form element "select" style set up */
+select{
+    margin:10px 20px;
+    padding: 10px;
+    font-size: 20px;
+    width:86%;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+/* button framework set up*/
+.search_bt {
+    text-align: center;
+    background: #ffb6c8;
+    font-size: 20px;
+    color: #000;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    margin-top: 10px;
+}
+
+/*CSS Method of handling mouse hovering*/
+button:hover
+{
+    background: #ff8095;
+    cursor: pointer;
+}
+
+
+.lct_bt {
+    text-align: center;
+    background: #ffb6c8;
+    font-size: 1.4rem;
+    color: #000;
+    border-radius: 25px;
+    padding: 15px 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.position {
+    margin-bottom: 20px;
+    padding: 5px 30px 30px 0px;
+    font-size: 1rem;
+    color: #000;
+}

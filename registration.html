@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <!-- head element -->
+    <head>
+        <title> Registration Page </title>
+        <!-- control layout of the page on mobile brower -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <!-- link to the external css file resource, "registration_style.css" is the same folder -->
+        <link rel="stylesheet" type="text/css" href="registration_style.css">
+
+        <!-- Defer here means to run the script after the page has been parsed. -->
+        <script src="registration_validation.js" defer></script>
+
+    </head>
+
+    <!-- body element -->
+    <body>
+         <!-- header element -->
+        <header> 
+            <div class="column logo"> 
+                <!--the logo of the website is an image, clicking the logo will be linked to the search page (home page) -->
+            	<a href="search.html"><img src="ak.jpg" alt="" width = "50" height="50"></a>
+            </div>
+
+            <!--navigation menu-->
+            <!-- There are five links to other pages, such as login page, sign up page, home page etc. -->
+            <div class="column top-navigation"> 
+                <a href="login.html"> Log In</a>
+                <a href="registration.html"> Sign Up</a>
+                <a href="logout.php"> Log Out</a> <!-- write a review page is not implemented at this point, we will update later -->
+                <a href="submission.php"> New Business </a>
+                <a href="search.html"> Home</a>
+            </div>
+        </header>
+
+        <!-- a form for user to enter infomation to log in -->
+        <div class="row">
+            <div class="column instruction">
+                <!-- instructions show that this is the sign up page -->
+                <h1>Sign Up</h1>
+                <p> Please enter your information to sign up for an account.</p>
+                
+                <!-- a form for user to enter infor to sign up -->
+                <form id="registration_form" action="register.php" method="post"> <!-- form validation using javaScript -->
+                    <label> First Name * </label> <!-- First Name -->
+                    <input type="text" placeholder="First Name" id="fn_input" name="first"> <!-- text box to enter first name-->
+                    <label> Last Name * </label> <!-- Last Name -->
+                    <input type="text" placeholder="Last Name" id="ln_input" name="last"> <!-- text box to enter last name-->
+                    <label> Email * </label>
+                    <input type="email" placeholder="Email Address" id="email_input" name="email"> <!-- text box to enter email with type="email" -->
+                    <label> Password * (at least one uppercase letter, at least one number and the length of the password is greater than or equal to 8)</label>
+                    <input type="password" placeholder="Password" id="pwd_input" name="pwd"> <!-- password will not be visible while entering -->
+                    <label> Country * </label>
+                    <select id="country" name="country"> <!--selection element for user to choose their nationality-->
+                        <option value="Canada"> Canada </option>
+                        <option value="USA">  USA </option>
+                        <option value="China"> China </option>
+                    </select>
+                    <label> Postal Code </label>
+                    <input type="text" placeholder="Postal Code" id="postalcode_input" name="postal"> <!--text box to enter postal code-->
+                    <label>
+                    <input type="checkbox" id="confirm_input"> <!-- a checkbox allows user to confirm all the entered information -->
+                    Please confirm your infomation and check the box. 
+                    </label>
+                    <label id="error_message" style="color:red">
+
+                    </label>
+
+                    <label id="error_message2" style="color:red"> </label>
+                    <input type="submit" value="Submit"> <!-- submit button -->
+                </form>
+            </div>
+        </div>
+
+        <!-- footer element -->
+        <footer>
+            Copyright © 2019 AMY&KENZO
+        </footer>
+    </body>
+</html>
