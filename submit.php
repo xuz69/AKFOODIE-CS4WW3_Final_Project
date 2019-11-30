@@ -23,7 +23,26 @@ for($i=0;$i < count($_POST["file"]); $i++){
         $test = $test . $_POST["file"][$i] . ",";
     }
 }
+
+/*
+ * $check= "SELECT * FROM objects WHERE ((business = ?) AND  (latitude = ?) AND (longitude = ?))" 
+
+
+$test = $dbh->query($check);
+
+echo $test->rowCount();
+
+// if the account exists, return error
+if($test->rowCount() > 0){
+    echo "error";
+}
+else{
+    加下面那段 insert
+}
+ * 
+ */
 // submit new bussiness into the database
+
 $sql = "INSERT INTO objects (business_name,description,latitude,longitude,image_url,owner_id) VALUES (?, ?, ?, ?, ?, ?)";
 $stmnt = $dbh->prepare($sql);
 
@@ -61,6 +80,7 @@ try {
             'region'  => 'ca-central-1'
         )
     );
+    echo "s3 success!";
 } catch (Exception $e) {
     // We use a die, so if this fails. It stops here. Typically this is a REST call so this would
     // return a json object.
