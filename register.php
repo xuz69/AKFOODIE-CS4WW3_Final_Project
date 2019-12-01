@@ -20,15 +20,15 @@ $code = $_POST['postal'];
  * check whether the account already exists
  * avoid duplicate name of the user and duplicate email address exist in the database
  */
-$check = "SELECT * FROM users WHERE ((first_name = '$firstname') AND (last_name = '$lastname')) OR (email = '$e_mail')";
+$check = "SELECT * FROM users WHERE (email = '$e_mail')";
 
 $test = $dbh->query($check);
 
-echo $test->rowCount();
 
-// if the account exists, return error
+// if the account exists, return error message.
 if($test->rowCount() > 0){
-    echo "error";
+    echo "error, the email address you have entered is already registered. Redirect to registration page in 5 sec.";
+    header( "refresh:5;url=registration.html" );
 }
 else{
     // else insert the new account into the database
@@ -41,8 +41,8 @@ else{
     catch (PDOException $e) {
         echo $e->getMessage();
     }
-    // redirect
-    header("Location: https://{$_SERVER['HTTP_HOST']}/registration.html");
+    // redirect to login page
+    header("Location: https://{$_SERVER['HTTP_HOST']}/login.html");
 }
 
 

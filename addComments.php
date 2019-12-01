@@ -17,11 +17,11 @@ else{
     // Session variables
     $user = $_SESSION['ID'];
 
-    // POST variables
+    // POST variables, comment content and rating
     $comment = $_POST["comment"];
     $rate = $_POST["rating"];
 
-    // GET variables
+    // GET variables, object_id
     $id = $_GET["object_id"];
 
     /*
