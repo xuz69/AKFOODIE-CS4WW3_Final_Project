@@ -188,7 +188,7 @@ function star($input){
                 <!--using tabular element to show all the reviews-->
                 <div class="info-reviews">
                     <div class="reviews-label">
-                        <h3>All reviews:</h3>
+                        <h3>All reviews: <?php echo $count . " review(s)";?></h3>
                     </div>
                     <table>
                         <?php for($i=0;$i<$count;$i++){ ?>
