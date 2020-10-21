@@ -15,8 +15,8 @@ CS4WW3 Project Part 3 (Server-side)
         - git email: xuam922@outlook.com
 
 
-2. Website Information:
-- Active Url: https://www.akfoodie.com/
+2. Website Information [Inactive!]:
+- Url: https://www.akfoodie.com/
 - IP of the site: 3.214.73.110
 - Domain Name: akfoodie.com
 
