@@ -16,7 +16,7 @@ CS4WW3 Project Part 3 (Server-side)
 
 
 2. Website Information [Inactive!]:
-- Url: https://www.akfoodie.com/
+- Url: https://www.akfoodie.com/ [not live now]
 - IP of the site: 3.214.73.110
 - Domain Name: akfoodie.com
 
