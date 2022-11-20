@@ -1,7 +1,7 @@
 # AK Foodie
 
 1. Team Members:
-    - Ziqing Xu []
+    - Ziqing Xu
         - git username: xuz69
         - git email: xuam922@outlook.com
 
